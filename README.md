@@ -1,5 +1,7 @@
 # Very Simple PHP Redirect
 
+<img width="640" alt="very-simple-redirect" src="https://user-images.githubusercontent.com/485751/137625858-0ce4def5-0594-4b2b-8ee6-eeaf8597cae2.png">
+
 If you've moved (are planning) from new domain & you don't want to simply redirect to new domain.
 You want to tell your site visitors that your domain has changed.
 
