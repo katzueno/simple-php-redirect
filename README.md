@@ -55,7 +55,7 @@ RewriteRule . index.php [L]
 ## Nginx config example
 
 I assume you know about Nginx server and its config.
-Add the following config in your nginx confi`g.
+Add the following config in your nginx config.
 I've assume you've set `~ \.php($|/)` location to send it to php-fpm.
 As same as Apache, change location to directory if you want just to place underneath, and `absolute_redirect` must be turned off.
 
