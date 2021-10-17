@@ -7,6 +7,8 @@ You want to tell your site visitors that your domain has changed.
 
 This simple PHP script shows very simple message that domain has changed for set amount of seconds, then redirected to the new domain.
 
+It is also render 301 status code. So Google will know your page was moved, too.
+
 It will fetch the current request URL, and redirect to the new domain with exact same URI.
 
 https://github.com/katzueno/simple-php-redirect

@@ -1,10 +1,14 @@
 # Very Simple PHP Redirect
 
+<img width="640" alt="very-simple-redirect" src="https://user-images.githubusercontent.com/485751/137625858-0ce4def5-0594-4b2b-8ee6-eeaf8597cae2.png">
+
 新しいドメインに移行した際、シンプルにリダイレクトさせるのではなく、サイト訪問者にドメインが変更したことを伝えたい場合があります。
 
 これは、ドメイン変更のシンプルなメッセージを指定した秒数で表示しつつ、新ドメインにリダイレクトしてくれるPHPスクリプトです。
 
 加えて、アクセスされているパスを取得し、新ドメインの同じパスでリダイレクトしてくれます。
+
+また、きちんと 301 ステータスコードを出すようにしているので、Google さんも引っ越したことがわかります。
 
 https://github.com/katzueno/simple-php-redirect
 
