@@ -98,5 +98,3 @@ http_response_code(301);
 </div>
 </body>
 </html>
-
-</body>
