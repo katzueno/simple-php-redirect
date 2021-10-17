@@ -1,13 +1,15 @@
 # Very Simple PHP Redirect
 
-If you've moved from new domain & you don't want to simply redirect to new domain.
+If you've moved (are planning) from new domain & you don't want to simply redirect to new domain.
 You want to tell your site visitors that your domain has changed.
 
-This simple PHP script show very simple message that domain has changed.
+This simple PHP script shows very simple message that domain has changed for set amount of seconds, then redirected to the new domain.
 
 It will fetch the current request URL, and redirect to the new domain with exact same URI.
 
 https://github.com/katzueno/simple-php-redirect
+
+[日本語はこちら](./README.ja.md)
 
 ## Requirement
 
@@ -15,19 +17,18 @@ https://github.com/katzueno/simple-php-redirect
     - You could set it in Apache config.
 - For Nginx server
     - PHP-FPM
-    - Ability to set nginx config and knowledge
+    - Ability to set nginx config
 
 ## How to install
 
-1. Change index.php to your desired state.
-    - You could add logos and other text if you wish.
+1. Change the config values such as new domain to index.php to your desired state.
 2. Place (or upload) index.php script to your old domain's webroot and clear all other files
 3. Edit your apache config, .htaccess or Nginx config so that all request will go through this index.php
 4. Enjoy the rest
 
 ## Where to set
 
-`$newDomain`: Enter the new domain name.
+`$newDomain`: Enter the new domain name. Starts with `https://`
 
 `$siteNameEn`: Site name in English.
 
@@ -38,7 +39,7 @@ https://github.com/katzueno/simple-php-redirect
 ## Apache's .htaccess example
 
 Create .htaccess file (if your server is allowing it), and enter the following.
-If you want to place it under some directory, make sure to change `RewriteEngine`.
+If you want to place it under some directory, make sure to change `RewriteBase`.
 
 ```apacheconf
 <IfModule mod_rewrite.c>
@@ -56,8 +57,8 @@ RewriteRule . index.php [L]
 
 I assume you know about Nginx server and its config.
 Add the following config in your nginx config.
-I've assume you've set `~ \.php($|/)` location to send it to php-fpm.
-As same as Apache, change location to directory if you want just to place underneath, and `absolute_redirect` must be turned off.
+I assume you've set `~ \.php($|/)` location to send it to php-fpm.
+Change location to sub-directory if you want just to place underneath, and `absolute_redirect` must be turned off.
 
 
 ```

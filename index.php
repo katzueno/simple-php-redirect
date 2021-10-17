@@ -5,6 +5,8 @@
  * By @katzueno
  * Version: 0.9.0
  *
+ * LICENSE: GNU GENERAL PUBLIC LICENSE V3
+ *
  * Read readme.md for further instructions.
  * https://github.com/katzueno/simple-php-redirect
  */
