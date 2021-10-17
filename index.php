@@ -27,8 +27,8 @@ $siteNameEn = "Katz Ueno Website";
  */
 $siteNameJa = "Katz Ueno 個人サイト";
 /**
- * Secods to wait until redirect
- * @var string
+ * Seconds to wait until redirect
+ * @var number
  */
 $sec = 10;
 
